@@ -1,0 +1,16 @@
+/public/assets*
+/tmp
+.env.local
+.env.*.local
+*~
+/vendor
+.env.*
+/.ssh
+/spec/examples.txt
+/settings.yml
+/Dockerfile
+/.key/*
+/logs/
+/info/version
+/bin
+/*gem

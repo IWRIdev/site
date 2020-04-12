@@ -1,0 +1,3 @@
+project=iwrinet
+test=rspec
+template=haml
