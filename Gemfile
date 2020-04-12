@@ -7,6 +7,12 @@ gem 'pg'
 
 gem 'haml'
 
+gem 'redcarpet'
+
+gem 'monkey-hash'
+gem 'cfgstore'
+gem 'cfgdatabase'
+
 group :development do
   # Code reloading
   # See: https://guides.hanamirb.org/projects/code-reloading
@@ -16,6 +22,8 @@ end
 
 group :test, :development do
   gem 'dotenv', '~> 2.4'
+  gem 'irb'
+  gem 'pry-byebug'
 end
 
 group :test do

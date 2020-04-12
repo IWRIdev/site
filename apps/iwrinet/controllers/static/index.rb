@@ -1,6 +1,6 @@
 module Iwrinet
   module Controllers
-    module Home
+    module Static
       class Index
         include Iwrinet::Action
 

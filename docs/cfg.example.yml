@@ -1,0 +1,13 @@
+---
+db:
+  adapter: postgres
+  user: iwrinetusername
+  password: very invalid password
+  database: iwrinet_dev
+  host: 127.0.0.1
+  port: 5432
+  search_path: public
+redis:
+  host: 127.0.0.1
+  port: 6379
+  db: 0
