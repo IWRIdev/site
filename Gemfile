@@ -6,12 +6,14 @@ gem 'sequel'
 gem 'pg'
 
 gem 'haml'
-
+gem "shrine", "~> 3.0"
 gem 'redcarpet'
+gem 'workflow'
 
 gem 'monkey-hash'
 gem 'cfgstore'
 gem 'cfgdatabase'
+gem 'sequel_workflow_persistence'
 
 group :development do
   # Code reloading
@@ -24,6 +26,7 @@ group :test, :development do
   gem 'dotenv', '~> 2.4'
   gem 'irb'
   gem 'pry-byebug'
+  gem 'thor'
 end
 
 group :test do

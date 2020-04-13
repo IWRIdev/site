@@ -1,5 +1,7 @@
 require 'bundler/setup'
 require 'hanami/setup'
+require_relative 'initializers/customconfig'
+require_relative 'initializers/shrine'
 require_relative '../lib/iwrinet'
 require_relative '../apps/iwrinet/application'
 require_relative '../apps/adminka/application'
@@ -28,3 +30,5 @@ Hanami.configure do
     end
   end
 end
+
+Dir[ "#{ Cfg.root }/model/*.rb" ].each{|d|  require_relative "#{ d }/*.rb" }

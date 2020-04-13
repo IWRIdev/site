@@ -1,10 +1,8 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
-$progname = 'Sequel migration tool'
 require 'bundler/setup'
 require 'pathname'
-require 'bunny'
 require 'logger'
 require 'yaml'
 require 'optparse'
@@ -12,10 +10,15 @@ require 'msgpack'
 require 'zlib'
 require 'json'
 require 'thor'
+
 require 'monkey-hash'
 require 'app-config'
-require_relative '../lib/app-main'
-App::Main.new( Pathname( Dir.pwd ) )
+require 'app-logger'
+require 'app-database'
+
+App::Config.init approot: Pathname( __dir__ ).parent, configdir: 'config/settings'
+App::Logger.new
+App::Database.instance if defined?( Cfg.db )
 
 Sequel.extension :migration
 
