@@ -1,7 +1,7 @@
 source 'https://rubygems.org' do
 
   gem 'rake'
-  gem 'hanami',       '~> 1.3'
+  gem 'hanami', '~> 1.3'
   gem 'sequel'
   gem 'pg'
 
@@ -11,7 +11,7 @@ source 'https://rubygems.org' do
   gem 'workflow'
 
   gem 'monkey-hash'
-  gem 'cfgstore', path: '/home/dimytch/work/sudo.su/lib/cfgstore'
+  gem 'cfgstore'
   gem 'cfgdatabase'
   gem 'sequel_workflow_persistence'
 
