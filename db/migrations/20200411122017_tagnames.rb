@@ -1,4 +1,5 @@
 Sequel.migration do
+  
   up do
     run <<~EUP0
       CREATE TYPE tag_group_type AS ENUM ('client', 'file', 'article', 'message');

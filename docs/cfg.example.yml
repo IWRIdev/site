@@ -1,4 +1,11 @@
 ---
+app:
+  id: iwri.net
+  # do not use `stderr` here, because of hanami bug.
+  log: /tmp/log_d.txt
+  tmout:
+    database_start: 60
+
 db:
   adapter: postgres
   user: iwrinetusername
@@ -7,6 +14,7 @@ db:
   host: 127.0.0.1
   port: 5432
   search_path: public
+
 redis:
   host: 127.0.0.1
   port: 6379
